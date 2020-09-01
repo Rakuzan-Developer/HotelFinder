@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jEIpCoiK+XdaeDzvRfJPSNY87T46BkN2iCQlNdZhpOTymzstcI/jvS20cntw67vEsq+c3waaJXuiHBIAQnIHcA==",
+  "dgSpecHash": "7DqyUDvI21oqckrr5jVbxu0S6yx9tCM7bKZrlh8yyxkxvwiFMW3Z5xkOE0BcNkCr2PbvnkbUw29uqlhlvbp4kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.Business\\HotelFinder.Business.csproj",
+  "projectFilePath": "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.Business\\HotelFinder.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

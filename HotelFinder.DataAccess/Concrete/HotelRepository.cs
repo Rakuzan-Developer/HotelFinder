@@ -2,61 +2,74 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using HotelFinder.DataAccess.Abstract;
 using HotelFinder.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelFinder.DataAccess.Concrete
 {
     public class HotelRepository:IHotelRepository
     {
-        public List<Hotel> GetAllHotels()
+        public async Task<List<Hotel>> GetAllHotels()
         {
             using (var hotelDbContext = new HotelDbContext())
             {
-                return hotelDbContext.Hotels.ToList();
+                return await hotelDbContext.Hotels.ToListAsync();
             }
         }
 
-        public Hotel GetHotelById(int id)
+        public async Task<Hotel> GetHotelById(int id)
         {
             using (var hotelDbContext = new HotelDbContext())
             {
-                return hotelDbContext.Hotels.Find(id);
+                return await hotelDbContext.Hotels.FindAsync(id);
             }
         }
 
-        public Hotel CreateHotel(Hotel hotel)
+        public async Task<Hotel> GetHotelByName(string name)
+        {
+            using (var hotelDbContext = new HotelDbContext())
+            {
+                return await hotelDbContext.Hotels.FirstOrDefaultAsync(x=>x.Name.ToLower()==name.ToLower());
+            }
+        }
+
+
+        public async Task<Hotel> CreateHotel(Hotel hotel)
         {
             using (var hotelDbContext = new HotelDbContext())
             {
                 hotelDbContext.Hotels.Add(hotel);
-                hotelDbContext.SaveChanges();
+                await hotelDbContext.SaveChangesAsync();
                 return hotel;
                 
 
             }
         }
 
-        public Hotel UpdateHotel(Hotel hotel)
+        public async Task<Hotel> UpdateHotel(Hotel hotel)
         {
             using (var hotelDbContext = new HotelDbContext())
             {
                 hotelDbContext.Hotels.Update(hotel);
-                hotelDbContext.SaveChanges();
+                await hotelDbContext.SaveChangesAsync();
                 return hotel;
                 
 
             }
         }
 
-        public void DeleteHotel(int id)
+        public async Task DeleteHotel(int id)
         {
             using (var hotelDbContext = new HotelDbContext())
             {
-                var DeletedHotel = GetHotelById(id);
+                var DeletedHotel = await GetHotelById(id);
                 hotelDbContext.Hotels.Remove(DeletedHotel);
-                hotelDbContext.SaveChanges();
+                await hotelDbContext.SaveChangesAsync();
             }
         }
+
+        
     }
 }

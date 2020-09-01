@@ -5690,11 +5690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.Business\\HotelFinder.Business.csproj",
+      "projectUniqueName": "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.Business\\HotelFinder.Business.csproj",
       "projectName": "HotelFinder.Business",
-      "projectPath": "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.Business\\HotelFinder.Business.csproj",
+      "projectPath": "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.Business\\HotelFinder.Business.csproj",
       "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.Business\\obj\\",
+      "outputPath": "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5710,11 +5710,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.DataAccess\\HotelFinder.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.DataAccess\\HotelFinder.DataAccess.csproj"
+            "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.DataAccess\\HotelFinder.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.DataAccess\\HotelFinder.DataAccess.csproj"
             },
-            "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.Entities\\HotelFinder.Entities.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\source\\repos\\HotelFinder\\HotelFinder.Entities\\HotelFinder.Entities.csproj"
+            "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.Entities\\HotelFinder.Entities.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\OneDrive\\Belgeler\\GitHub\\HotelFinder\\HotelFinder.Entities\\HotelFinder.Entities.csproj"
             }
           }
         }
